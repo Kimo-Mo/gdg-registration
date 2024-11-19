@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/K-logo.png" type="image/x-icon" />
+    <title>GDG Zagazig - Registration</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="nav">
+        <div class="logo">
+          <img src="./imgs/Logo.svg" alt="logo" />
+        </div>
+        <ul class="links">
+          <li>
+            <a class="link active" href="#">feature</a>
+          </li>
+          <li>
+            <a class="link" href="#">affiliate</a>
+          </li>
+          <li>
+            <a class="link" href="#">pricing</a>
+          </li>
+          <li>
+            <a class="link" href="#">communities</a>
+          </li>
+          <button class="mainBtn">join wishlist</button>
+        </ul>
+        <img class="menuIcon" src="./imgs/Hamburger Menu.svg" alt="menu icon" />
+      </nav>
+    </header>
+    <main>
+      <section class="main container">
+        <article class="info">
+          <p class="headline">
+            We are now allowing early-access for user. <a href="#">Lean more</a>
+          </p>
+          <h1 class="title">
+            Build A highly engaged <br />
+            community with now effort.
+          </h1>
+          <p class="description">
+            Community offers to Build A highly engaged community with now Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit Ullam, dicta
+            Lorem ipsum dicta Lorem ipsum.
+          </p>
+          <div class="form">
+            <input
+              type="text"
+              class="input"
+              placeholder="enter your email address" />
+            <button class="mainBtn">join wishlist</button>
+          </div>
+          <div class="companies">
+            <p>used by this companies:</p>
+            <div class="imgs">
+              <img src="./imgs/Atlassian Icon.svg" alt="Atlassian Icon">
+              <img src="./imgs/Behance Icon.svg" alt="Behance Icon">
+              <img src="./imgs/Bing Icon.svg" alt="Bing Icon">
+              <img src="./imgs/Bitbucket Icon.svg" alt="Bitbucket Icon">
+              <img src="./imgs/Dropbox Icon.svg" alt="Dropbox Icon">
+              <img src="./imgs/Twitch Icon.svg" alt="Twitch Icon">
+              <img src="./imgs/Twitter Icon.svg" alt="Twitter Icon">
+            </div>
+          </div>
+        </article>
+        <article class="heroImg">
+          <img src="./imgs/Illustration.png" alt="Illustration" />
+        </article>
+      </section>
+    </main>
+    <script>
+      let links = document.querySelector(".links");
+      let menuIcon = document.querySelector(".menuIcon");
+      menuIcon.addEventListener("click", () => {
+        links.classList.toggle("showMenu");
+      });
+    </script>
+  </body>
+</html>
